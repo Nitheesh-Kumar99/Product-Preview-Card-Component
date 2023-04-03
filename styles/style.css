@@ -52,6 +52,9 @@ body{
   background-color: var(--clr-white);
   border-radius: 1rem;
 }
+.desktop-img{
+  display: none;
+}
 .mobile-img{
   border-top-right-radius:1rem ;
   border-top-left-radius:1rem ;
@@ -113,6 +116,26 @@ button{
 }
 
 @media screen and (min-width: 991px) {
+  .mobile-img{
+    display: none;
+  }
+  .desktop-img{
+    display: flex;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+  }
+  .title-description{
+    width: 290px;
+  }
+  .img-container{
+    width: 300px;
+  }
   
 }
 
